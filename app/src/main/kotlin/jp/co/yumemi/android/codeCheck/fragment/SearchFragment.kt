@@ -15,13 +15,14 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import io.ktor.client.*
 import io.ktor.client.engine.android.*
-import jp.co.yumemi.android.codeCheck.R
-import jp.co.yumemi.android.codeCheck.data.GitHubApi
-import jp.co.yumemi.android.codeCheck.data.GitHubApiImpl
-import jp.co.yumemi.android.codeCheck.data.GitHubRepositoryImpl
-import jp.co.yumemi.android.codeCheck.databinding.FragmentSearchBinding
-import jp.co.yumemi.android.codeCheck.model.GitHubRepositoryItem
+import jp.co.yumemi.android.codeCheck.Service.GitHubApi
+import jp.co.yumemi.android.codeCheck.Service.GitHubApiImpl
+import jp.co.yumemi.android.codeCheck.adapter.SearchListAdapter
+import jp.co.yumemi.android.codeCheck.repository.GitHubRepositoryImpl
+import jp.co.yumemi.android.codeCheck.repository.GitHubRepositoryItem
+import jp.co.yumemi.android.codeCheck.view_model.SearchViewModel
 import jp.co.yumemi.android.code_check.R
+import jp.co.yumemi.android.code_check.databinding.FragmentSearchBinding
 
 class SearchFragment : Fragment(R.layout.fragment_search) {
 
@@ -70,7 +71,7 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
         }
     }
 
-    private fun gotoRepositoryFragment(item: jp.co.yumemi.android.codeCheck.model.GitHubRepositoryItem) {
+    private fun gotoRepositoryFragment(item: GitHubRepositoryItem) {
         val action = SearchFragmentDirections
             .actionRepositoriesFragmentToRepositoryFragment(item = item)
         findNavController().navigate(action)
