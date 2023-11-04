@@ -1,4 +1,4 @@
-package jp.co.yumemi.android.codeCheck.repository
+package jp.co.yumemi.android.codeCheck.model
 
 
 import android.os.Parcelable
