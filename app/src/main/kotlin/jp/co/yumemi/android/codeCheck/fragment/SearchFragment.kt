@@ -19,7 +19,7 @@ import jp.co.yumemi.android.codeCheck.Service.GitHubApi
 import jp.co.yumemi.android.codeCheck.Service.GitHubApiImpl
 import jp.co.yumemi.android.codeCheck.adapter.SearchListAdapter
 import jp.co.yumemi.android.codeCheck.repository.GitHubRepositoryImpl
-import jp.co.yumemi.android.codeCheck.repository.GitHubRepositoryItem
+import jp.co.yumemi.android.codeCheck.model.GitHubRepositoryItem
 import jp.co.yumemi.android.codeCheck.view_model.SearchViewModel
 import jp.co.yumemi.android.code_check.R
 import jp.co.yumemi.android.code_check.databinding.FragmentSearchBinding

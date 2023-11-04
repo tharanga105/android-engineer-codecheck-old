@@ -3,7 +3,7 @@ package jp.co.yumemi.android.codeCheck
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
 import jp.co.yumemi.android.codeCheck.repository.GitHubRepository
-import jp.co.yumemi.android.codeCheck.repository.GitHubRepositoryItem
+import jp.co.yumemi.android.codeCheck.model.GitHubRepositoryItem
 import jp.co.yumemi.android.codeCheck.view_model.SearchViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi

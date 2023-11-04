@@ -3,7 +3,7 @@ package jp.co.yumemi.android.codeCheck.view_model
 import android.util.Log
 import androidx.lifecycle.*
 import jp.co.yumemi.android.codeCheck.repository.GitHubRepository
-import jp.co.yumemi.android.codeCheck.repository.GitHubRepositoryItem
+import jp.co.yumemi.android.codeCheck.model.GitHubRepositoryItem
 import kotlinx.coroutines.launch
 
 class SearchViewModel(private val repository: GitHubRepository) : ViewModel() {
