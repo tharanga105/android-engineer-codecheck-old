@@ -4,7 +4,6 @@
 package jp.co.yumemi.android.codeCheck
 
 import androidx.appcompat.app.AppCompatActivity
-//import jp.co.yumemi.android.codeCheck.R
 import jp.co.yumemi.android.code_check.R
 import java.util.*
 
